@@ -84,7 +84,9 @@ WSGI_APPLICATION = 'proyectoApi.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': dj_database_url.config(
+            default='postgres://uycweycwjxqe9uz4pvwl:CKo3MooIO9pOVdOcLWbet6elULJJc2@bbk1joclzjfpo1sqnomv-postgresql.services.clever-cloud.com:50013/bbk1joclzjfpo1sqnomv'
+        )
         # 'ENGINE': 'django.db.backends.mysql',
         # # 'NAME': BASE_DIR / 'db.sqlite3',
         # 'NAME': 'bqq4ttjb3vpc5f9krbl4',
@@ -92,10 +94,7 @@ DATABASES = {
         # 'PASSWORD': 'fWrjYchdwEwLekqVmLsT',
         # 'HOST': 'bqq4ttjb3vpc5f9krbl4-mysql.services.clever-cloud.com',
         # 'PORT': '3306'
-        dj_database_url.config(
-            default='postgres://uycweycwjxqe9uz4pvwl:CKo3MooIO9pOVdOcLWbet6elULJJc2@bbk1joclzjfpo1sqnomv-postgresql.services.clever-cloud.com:50013/bbk1joclzjfpo1sqnomv'
-        )
-    }
+    
 }
 
 
