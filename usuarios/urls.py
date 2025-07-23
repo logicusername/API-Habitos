@@ -8,5 +8,4 @@ router.register('api/usuarios', UsuarioViewset, 'usuarios')
 router.register('api/habitos', HabitosViewset, 'habitos')
 router.register('api/seguimiento', SeguimientoViewset, 'seguimiento')
 router.register('api/logros', LogrosViewset, 'logros')
-
 urlpatterns = router.urls
