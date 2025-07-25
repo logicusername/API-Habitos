@@ -66,6 +66,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+    'https://api-habitos.onrender.com/',
 )
 
 ROOT_URLCONF = 'proyectoApi.urls'
